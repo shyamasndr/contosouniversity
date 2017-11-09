@@ -1,0 +1,11 @@
+services:
+  contosouniversity:
+    build:
+      context: C:\Users\Aamir\Downloads\cu-final
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: contosouniversity
+    ports:
+    - 80/tcp
+version: '3.0'
